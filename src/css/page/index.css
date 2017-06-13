@@ -1,0 +1,266 @@
+@import url('../lib/reset.css');
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  height: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+}
+.header .header-content {
+  height: 50px;
+  font-size: 18px;
+  box-shadow: 0 2px 3px #000;
+  text-align: center;
+  line-height: 50px;
+  background: #990100;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #FFFFFF;
+}
+.header .header-content .searchBtn {
+  width: 24px;
+  height: 22px;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  display: block;
+  background: url(../../images/sss.png) no-repeat;
+  background-size: 100%;
+}
+.header .header-content .back {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: url(../../images/fan.png) no-repeat;
+  background-size: 24px 24px;
+  position: absolute;
+  display: none;
+  left: 10px;
+  top: 15px;
+}
+.header .header-content .collect {
+  width: 24px;
+  height: 22px;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  display: block;
+  background: url(../../images/fav.png) no-repeat;
+  background-size: 100%;
+  display: none;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+@media screen and (min-height: 100%) {
+  .main .main div {
+    width: 100%;
+    height: 100%;
+  }
+}
+.main div {
+  width: 100%;
+  height: 100%;
+  padding: 60px 10px;
+  box-sizing: border-box;
+  display: none;
+}
+.main #home {
+  display: block;
+}
+.main #home .print {
+  display: block;
+  margin-top: 10px;
+}
+.main #home .print .print-img {
+  width: 100%;
+  height: auto;
+}
+.main #home .print:last-child {
+  margin-bottom: 60px;
+}
+.main #Chinese .enshrine {
+  padding: 10px;
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+}
+.main #Chinese .enshrine .enshrine-title {
+  font-size: 15px;
+  line-height: 30px;
+  color: #ff4444;
+  padding-left: 10px;
+  border-left: 5px solid #ff4444;
+}
+.main #Chinese .enshrine .paragraph {
+  text-indent: 2em;
+  line-height: 20px;
+  color: #908E84;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.main #history .list {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #bdbaae;
+}
+.main #history .list .list-title {
+  padding-left: 10px;
+  display: block;
+  color: #6b6863;
+  font-size: 14px;
+  font-weight: bold;
+}
+.main #set .set-list {
+  margin: 17px 5px 0 5px;
+  border: 1px solid #c8c6bb;
+  border-radius: 10px;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 10px;
+}
+.main #set .set-list .size {
+  color: #1c1c1a;
+  font-weight: bold;
+  font-size: 12px;
+}
+.main #set .update .slide {
+  position: relative;
+  float: right;
+}
+.main #set .update .slide input[type=checkbox] {
+  position: absolute;
+  left: 0;
+  display: none;
+}
+.main #set .update .slide label {
+  display: inline-block;
+  width: 79px;
+  height: 27px;
+  margin-top: 4px;
+  margin-right: 7px;
+  background: url(../../images/btn.gif) no-repeat 0 0;
+  border-radius: 12px;
+  -webkit-transition: background 500ms;
+}
+.main #set .update .slide input:checked + label {
+  background: url(../../images/btn.gif) no-repeat -52px 0;
+}
+.main #set .typeface {
+  overflow: hidden;
+}
+.main #set .typeface .compare {
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  margin-top: 4px;
+  font-size: 12px;
+  float: right;
+  position: relative;
+}
+.main #set .typeface .compare input {
+  display: none;
+}
+.main #set .typeface .compare b {
+  margin-left: 27px;
+}
+.main #set .typeface .compare label {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../../images/an.png) no-repeat 0 -50px;
+}
+.main #set .typeface .compare input:checked + b + label {
+  background: url(../../images/an.png) no-repeat 0 0;
+}
+#content {
+  width: 100%;
+  padding: 60px 10px;
+  box-sizing: border-box;
+}
+#content .list {
+  display: block;
+  height: 68px;
+  border-bottom: 2px dashed #eeeadc;
+  position: relative;
+}
+#content .list .list-img {
+  box-shadow: 2px 0 2px #8b423d;
+  margin-bottom: 1px;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #ca9c8a;
+}
+#content .list .list-title {
+  position: absolute;
+  top: 29px;
+  left: 80px;
+  font-size: 12px;
+  color: #908e84;
+}
+#content .list:last-child {
+  margin-bottom: 60px;
+}
+.article {
+  padding: 70px 10px 60px 10px;
+  box-sizing: border-box;
+}
+.article .essay {
+  font-size: 12px;
+  display: block;
+  color: #4f4d44;
+  line-height: 28px;
+}
+.article .essay:last-child {
+  margin-bottom: 60px;
+}
+.footer {
+  height: 50px;
+  background: #222222;
+  box-shadow: 0 -2px 3px #000000;
+  display: -webkit-box;
+  font-size: 13px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+.footer .mark {
+  width: 25%;
+  height: 52px;
+  background: #000000;
+  box-shadow: 2px 0 3px #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.footer .footer-tab {
+  width: 25%;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.footer .footer-tab .Chinese {
+  box-sizing: border-box;
+  padding-top: 10px;
+  display: block;
+}
